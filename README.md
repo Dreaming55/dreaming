@@ -15,7 +15,6 @@ body{
   padding-bottom: 50px;
 }
 
-/* 拉群/赞赏码（正常显示+点击放大） */
 .fixed-left, .fixed-right {
   position: fixed;
   top: 12px;
@@ -37,7 +36,6 @@ body{
   object-fit: cover;
 }
 
-/* 图片放大弹窗 */
 .img-modal {
   position: fixed;
   top: 0; left: 0; width: 100%; height: 100%;
@@ -55,7 +53,6 @@ body{
   box-shadow: 0 0 20px rgba(255,255,255,0.3);
 }
 
-/* 搜索框（优化样式+功能） */
 .search-box {
   background: #fff;
   border-radius: 18px;
@@ -76,7 +73,6 @@ body{
   color: #b0b8cc;
 }
 
-/* 头部 */
 .head {
   background: #fff;
   border-radius: 20px;
@@ -97,7 +93,6 @@ h1 {
   margin-top: 4px;
 }
 
-/* 折叠面板（不串版） */
 .faq {
   background: #fff;
   border-radius: 18px;
@@ -142,7 +137,6 @@ h1 {
   padding: 15px 20px 25px;
 }
 
-/* 链接样式 */
 a {
   display: inline-block;
   background: #ff96cc;
@@ -175,7 +169,6 @@ p { margin: 10px 0; }
   font-size: 15px;
 }
 
-/* 搜索高亮（更明显） */
 .highlight {
   background: #fff5ba;
   color: #d97706;
@@ -184,7 +177,6 @@ p { margin: 10px 0; }
   font-weight: 500;
 }
 
-/* 底部版权 */
 .copyright {
   text-align: center;
   font-size: 12px;
@@ -197,17 +189,14 @@ p { margin: 10px 0; }
 
 <body>
 
-<!-- 左上角：拉群二维码（你的专属链接） -->
 <div class="fixed-left" onclick="showImg('https://ftp.mioz.cn/test/2026/03/19/1773912806.JPG')">
   <img src="https://ftp.mioz.cn/test/2026/03/19/1773912806.JPG" alt="扫码备注拉群">
 </div>
 
-<!-- 右上角：赞赏码（你的专属链接） -->
 <div class="fixed-right" onclick="showImg('https://ftp.mioz.cn/test/2026/03/19/1773912894.JPG')">
   <img src="https://ftp.mioz.cn/test/2026/03/19/1773912894.JPG" alt="赞赏码">
 </div>
 
-<!-- 图片放大弹窗 -->
 <div class="img-modal" id="imgModal" onclick="closeImg()">
   <img id="bigImg" src="">
 </div>
@@ -218,11 +207,9 @@ p { margin: 10px 0; }
 </div>
 
 <div class="search-box">
-  <input type="text" class="search-input" id="searchInput" 
-         placeholder="🔍 例：大侦探、剑来、后来的我们..." oninput="doSearch()">
+  <input type="text" class="search-input" id="searchInput" placeholder="🔍 例：大侦探、剑来、后来的我们...">
 </div>
 
-<!-- 1. 每日优惠合集 -->
 <div class="faq">
   <div class="faq-title">🧧 每日优惠合集</div>
   <div class="faq-content">
@@ -230,7 +217,6 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 2. 其他分类资源合集 -->
 <div class="faq">
   <div class="faq-title">📁 其他分类资源合集</div>
   <div class="faq-content">
@@ -246,7 +232,6 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 3. 电视剧（不串版） -->
 <div class="faq">
   <div class="faq-title">📺 电视剧</div>
   <div class="faq-content">
@@ -296,7 +281,6 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 4. 综艺 -->
 <div class="faq">
   <div class="faq-title">🎙️ 综艺</div>
   <div class="faq-content">
@@ -331,7 +315,6 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 5. 动漫 -->
 <div class="faq">
   <div class="faq-title">🎬 动漫</div>
   <div class="faq-content">
@@ -350,7 +333,6 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 6. 电影 -->
 <div class="faq">
   <div class="faq-title">🎥 电影</div>
   <div class="faq-content">
@@ -397,17 +379,15 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 7. 每日小说 -->
 <div class="faq">
   <div class="faq-title">📚 每日小说</div>
   <div class="faq-content">
-    <p>📚【3.19小说】</p>
+    <p>📚【小说日更】</p>
     <a class="blue" href="https://pan.quark.cn/s/8c49086f89bb" target="_blank">夸</a>
     <a href="https://pan.baidu.com/s/1Ym-Jiero4qiGP6NxwRf5rQ?pwd=2580" target="_blank">度</a>
   </div>
 </div>
 
-<!-- 8. 每日短剧 -->
 <div class="faq">
   <div class="faq-title">💣 每日短剧</div>
   <div class="faq-content">
@@ -416,7 +396,6 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 9. 软件游戏 -->
 <div class="faq">
   <div class="faq-title">🎮 软件游戏</div>
   <div class="faq-content">
@@ -425,7 +404,6 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 10. 完结剧综合集 -->
 <div class="faq">
   <div class="faq-title">🎬 完结剧综合集</div>
   <div class="faq-content">
@@ -433,14 +411,12 @@ p { margin: 10px 0; }
   </div>
 </div>
 
-<!-- 底部版权声明 -->
 <div class="copyright">
   本站所有素材均来自于互联网，版权属原著所有<br>
   如有需要请购买正版。如有侵权，请联系我们立即删除。
 </div>
 
 <script>
-// 折叠面板功能（稳定不卡顿）
 document.querySelectorAll('.faq-title').forEach(title => {
   title.addEventListener('click', function() {
     const faq = this.parentElement;
@@ -448,38 +424,6 @@ document.querySelectorAll('.faq-title').forEach(title => {
   });
 });
 
-// 搜索功能（修复逻辑，现在能精准搜索）
-function doSearch() {
-  const searchKey = document.getElementById('searchInput').value.trim().toLowerCase();
-  const allContent = document.querySelectorAll('.faq-content');
-
-  // 先清除所有之前的高亮
-  document.querySelectorAll('.highlight').forEach(highlight => {
-    const parent = highlight.parentElement;
-    parent.replaceChild(document.createTextNode(highlight.textContent), highlight);
-    parent.normalize();
-  });
-
-  // 搜索关键词为空时，直接返回
-  if (!searchKey) return;
-
-  // 遍历所有板块内容，匹配关键词并高亮
-  allContent.forEach(content => {
-    const text = content.textContent.toLowerCase();
-    if (text.includes(searchKey)) {
-      // 替换文本中的关键词为高亮样式
-      let html = content.innerHTML;
-      const regex = new RegExp(`(${searchKey.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
-      html = html.replace(regex, '<span class="highlight">$1</span>');
-      content.innerHTML = html;
-
-      // 自动展开包含搜索结果的板块
-      content.parentElement.classList.add('active');
-    }
-  });
-}
-
-// 图片放大/关闭功能
 function showImg(url) {
   const modal = document.getElementById('imgModal');
   const bigImg = document.getElementById('bigImg');
@@ -488,8 +432,7 @@ function showImg(url) {
 }
 
 function closeImg() {
-  const modal = document.getElementById('imgModal');
-  modal.classList.remove('show');
+  document.getElementById('imgModal').classList.remove('show');
 }
 </script>
 
