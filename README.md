@@ -401,7 +401,7 @@ p { margin: 10px 0; }
 <div class="faq">
   <div class="faq-title">📚 每日小说</div>
   <div class="faq-content">
-    <p>📚【小说日更】</p>
+    <p>📚【3.19小说】</p>
     <a class="blue" href="https://pan.quark.cn/s/8c49086f89bb" target="_blank">夸</a>
     <a href="https://pan.baidu.com/s/1Ym-Jiero4qiGP6NxwRf5rQ?pwd=2580" target="_blank">度</a>
   </div>
